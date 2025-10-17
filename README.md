@@ -3,7 +3,9 @@
 ## Files
 ### Datasets
 1. mexico.RData, used for the survey analysis
-2. text_analysis.RData, military_coding.RData, and validation_set.RData, used for the text analysis.
+2. text_analysis.RData, used for the text analysis.
+3. military_coding.RData, used for the text analysis.
+4. validation_set.RData, used for the text analysis.
 
 ## Codebook
 
