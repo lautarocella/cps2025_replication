@@ -4,7 +4,7 @@ library(tidyverse)
 library(lubridate)
 
 # Load cleaned mañaneras sentence-level corpus
-load("text_analysis.RData")
+load("Data/text_analysis.RData")
 
 ### Figure 2 ###
 text_analysis %>%
@@ -39,7 +39,7 @@ ggsave("figure_2.png", height = 6, width = 9, bg = "white")
 
 ### Rhetoric toward military vs non-military institutions ###
 # Load dataset with references to military
-load("military_coding.RData")
+load("Data/military_coding.RData")
 # And subset full corpus to references to non-military gov. institutions to compare
 nonmilitary_coding <- text_analysis %>% filter(gov_institution == 1, !id %in% military_coding$id)
 table(military_coding$criticism)
@@ -48,7 +48,7 @@ table(nonmilitary_coding$criticism)
 
 ### Classifier validation ###
 # Load human validation set
-load("validation_set.RData")
+load("Data/validation_set.RData")
 validation_set <- left_join(text_analysis, validation_set) %>%
   drop_na(human_coding)
 # Produce confusion matrix

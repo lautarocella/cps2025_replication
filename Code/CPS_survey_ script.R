@@ -22,7 +22,7 @@ library(dotwhisker)
 library(mediation)
 
 # I. Load survey data
-load("mexico.RData")
+load("Data/mexico.RData")
 
 
 # II. Create subgroups
