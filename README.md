@@ -16,6 +16,7 @@ codebook.pdf describes the variables included in each dataset.
 1. CPS_survey_script.R, an R script to reproduce the tables and figures in the main manuscript and the appendix employing survey data
 2. text_analysis.R, an R script used to reproduce the tables and figures in the main manuscript and appendix employing text analysis. Scripts were run using R version 4.2.1.
 
-## Figures
-
-
+### Figures
+1. figure_2.png, AMLO's rhetorical attacks
+2. sensitivity_overlap.png, distribution of trash-talking-polarization overlap across 1000 simulation 
+3. sensitivity_ratio.png, distribution of trash-talking-polarization ratio across 1000 simulations 
